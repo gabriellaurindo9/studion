@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Studion</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -15,7 +16,7 @@
         <h1>Studi<span class="accent">on</span> <span class="subtitle">Eventos</span></h1>
         <ul>
             <li>
-                <a href="#">Empresa</a>
+                <a href="#" class="selected">Empresa</a>
             </li>
             <li>
                 <a href="#">Eventos</a>
@@ -33,52 +34,58 @@
     </nav>
 
     <header>
-        <h2>Empresa</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis vel vero voluptas rem nobis praesentium
-            necessitatibus maxime asperiores adipisci, soluta eligendi aut quo facilis enim, ad labore tenetur?
-            Accusantium, dolore?</p>
+        <h2>.empresa</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum.
+            Aliquam nonummy auctor massa</p>
     </header>
 
     <main>
-        <section>
-            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste vel asperiores ad fugiat debitis aliquid
-                odio amet aspernatur corporis. Consequatur fugit modi quaerat libero corporis possimus consectetur aut
-                voluptatum harum.</p>
-
-            <img src="./images/Layer 9 copy (1) 1.png" alt="Pessoas conversando no celular" />
+        <section class="section1">
+            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+            <p class="paragrafo1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                incididunt ut labore et
+                dolore magna aliqua.</p>
+            <p class="paragrafo2">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate</p>
+            <div>
+                <img src="./images/Layer 9 copy (1) 1.png" alt="Pessoas conversando no celular" class="pessoa" />
+            </div>
         </section>
 
-        <section>
+        <section class="section2">
             <h4>Quem confia no nosso trabalho</h4>
-            <img src="./images/logos 1.jpg" alt="Logo das empresas parceiras" />
+            <img src="./images/logos 1.png" alt="Logo das empresas parceiras" />
         </section>
 
-        <section>
+        <section class="section3">
             <img src="./images/Video.jpg" alt="Homem sentado em um prédio" />
 
         </section>
 
         <footer>
-            <h2>Studi<span>on</span> <span>Eventos</span></h2>
-            <form>
-                <label>Receba News e promoções</label>
-                <input type="email" placeholder="Email" />
-                <button type="submit">Enviar</button>
-            </form>
-            <ul>
-                <li>
-                    Facebook
-                </li>
-                <li>
-                    Whatsapp
-                </li>
-                <li>
-                    Youtube
-                </li>
-            </ul>
+            <div>
+                <h2>Studi<span class="accent">on</span> <span class="subtitle">Eventos</span></h2>
+                <form>
+                    <label>Receba News e promoções</label>
+                    <input type="email" placeholder="Email" />
+                    <button class="botao" type="submit">
+                        <img src="./images/icons/send2.png" alt="Enviar"> </button>
+                </form>
+                <ul>
+                    <li>
+                        <a href="#"> <img src="./images/icons/facebook.png"></a>
+                    </li>
+                    <li>
+                        <a href="#"> <img src="./images/icons/whatsapp.png"></a>
+                    </li>
+                    <li>
+                        <a href="#"> <img src="./images/icons/youtube.png"></a>
+                    </li>
+                </ul>
+            </div>
             <hr />
-            <p>Studi<span>on</span> <span>Eventos</p>
+            <p>Studi<span>on</span> - Todos os direitos reservados</p>
         </footer>
     </main>
 </body>
