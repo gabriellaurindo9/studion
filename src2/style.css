@@ -1,0 +1,5 @@
+@import url(../src/CSS/_base.css);
+@import url(../src/CSS/_nav.css);
+@import url(./CSS2/_header1.css);
+@import url(./CSS2/home1.css);
+@import url(../src/CSS/_footer.css);
