@@ -1,5 +1,5 @@
 nav {
-    padding-top: 10rem;
+    padding-top: 1rem;
     max-width: 115rem;
     width: 100%;
     display: flex;
@@ -164,7 +164,7 @@ nav > a {
     }
 }
 
-@media screen and (max-width: 4600px) {
+@media screen and (max-width: 460px) {
     header h2 {
         font-size: 5rem;
     }
