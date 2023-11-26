@@ -1,0 +1,141 @@
+.footer {
+    color: #fff;
+    background-color: #000;
+    width: 100%;
+    min-height: 30rem;
+    display: grid;
+    gap: 4rem;
+    padding: 4rem 2rem;
+    text-transform: uppercase;
+}
+
+.footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer__container  h2 {
+    font-size: 4rem;
+    text-align: right;
+}
+
+.footer__container  form {
+    width: 100%;
+    max-width: 45rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__container  label {
+    font-weight: 400;
+    font-size: small;
+}
+
+.footer__container input {
+    width: 100%;
+    max-width: 31.2rem;
+    height: 100%;
+    max-height: 5rem;
+    background-color: #EAab0a;
+    border: none;
+    padding: 0 0.5rem;
+}
+
+.footer__container input::placeholder {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.footer__container .botao {
+    width: 100%;
+    max-width: 6rem;
+    height: 100%;
+    max-height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer > hr {
+    height: 0rem;
+    width: 100%;
+    max-width: 110rem;
+    margin: 0 auto;
+    height: 0rem;
+    stroke-width: 0.05rem;
+    stroke: #fff;
+}
+
+.copyright {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    width: 29rem;
+    padding-top:1rem;
+    font-family: var(--fonr-primary);
+}
+
+.copyright span {
+    color: #EAAB0A;
+    font-family: var(--fonr-primary);
+}
+
+@media screen and (max-width: 860px) {
+    .footer__container {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .footer__container h2 {
+        font-size: 3rem;
+    }
+
+    .footer__container > form {
+        max-width: 35rem;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .footer__container h2 {
+        font-size: 2rem;
+    }
+
+    .footer__container form {
+        max-width: 25rem;
+    }
+
+    .footer__container label {
+        font-size: 1rem;
+    }
+
+    .footer__container input::placeholder {
+        font-size: 1rem;
+    }
+
+    .socials {
+        gap: 1rem;
+    }
+
+    .icon {
+        width: 2.8rem;
+    }
+
+    .copyright {
+        font-size: 1rem;
+        width: 21rem;
+    }
+}
+

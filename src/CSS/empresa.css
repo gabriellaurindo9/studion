@@ -1,0 +1,110 @@
+.section1 {
+    padding-top: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.section1>.text {
+    font-size: 2.5rem;
+    font-weight: 800;
+    max-width: 40rem;
+}
+
+.section1>p {
+    width: 49.4rem;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.section1>.paragrafo1 {
+    position: absolute;
+    top: 28rem;
+    left: 35rem;
+}
+
+.section1>.paragrafo2 {
+    position: absolute;
+    top: 42rem;
+    left: 35rem;
+}
+
+.lines {
+    background: url(../images/rectangle\ 1.png) center no-repeat;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+    max-width: 55rem;
+}
+
+.pessoa {
+    display: block;
+    margin: 0 auto;
+}
+
+.section2 {
+    background: #FFC501;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    padding: 4rem 2rem;
+    }
+
+.section2>h4 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+.section3 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.section3 img {
+    width: 100%;
+    max-width: 111rem;
+}
+
+
+@media screen and (max-width: 800px) {
+    .section1 {
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    .section1 .text {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .lines {
+        max-width: 40rem;
+    }
+
+    .pessoa {
+        max-width: 26rem;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .section1 {
+       padding-bottom: 4rem;
+    }
+
+    .section1 .text {
+        font-size: 1.8rem;
+    }
+
+    .lines {
+        display: none;
+    }
+
+    .section2 h4 {
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,12 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800;900&display=block);
+@import url(https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=block);
+
+:root {
+    --color-primary: #EAAB0A;
+    --color-secundary: #ffc501;
+    --text-primary: #fff;
+    --text-secindary: #000;
+    --bg-footer: #000;
+    --fonr-primary: 'Lato', sans-serif;
+    --font-secundary: 'Montserrat', sans-serif;
+}
