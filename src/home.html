@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Studion - Galeria</title>
+    <title>Studion - Home</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./CSS/home.css">
 </head>
 
 <body>
     <nav class="nav">
-        <a href="./">
+        <a href="./home.html">
             <h1 class="logo">Studi<span class="accent">on</span> <span class="subtitle">Eventos</span></h1>
         </a>
         <input id="menu-toggle" type="checkbox" />
@@ -20,7 +20,7 @@
         </label>
         <ul class="menu">
             <li>
-                <a class="active" href="./home.html">Empresa</a>
+                <a class="active" href="./home.html"></a>
             </li>
             <li>
                 <a href="./empresa.html">Empresa</a>
@@ -50,13 +50,45 @@
                         <img class="slide__background-image" src="./images/home/banner1.jpg.png">
                         <div class="slide__info">
                             <div class="slide__info__content">
-                                <h6 class="slide__info__date">PRÓXIMO EVENTO<span>DIA 25 DE SETEMBRO ÀS 19H</span></h6>
-                                <h2 class="slide__info__title"><span class="slide__info__accent">CREATIVE</span>MINDS
+                                <h6 class="slide__info__date"><span>PRÓXIMO EVENTO</span> - DIA 25 DE SETEMBRO ÀS 19H</h6>
+                                <h2 class="slide__info__title"><span class="slide__info__accent">CREATIVE</span><br>MINDS
                                 </h2>
                                 <button class="slide__info__button">SAIBA MAIS</button>
                             </div>
                         </div>
                         <a href="#carousel__slide2" class="carousel__next"></a>
+                    </div>
+                </li>
+                <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+                    <div class="carousel__snapper">
+                        <a href="#carousel__slide1" class="carousel__prev">
+                        </a>
+                        <img class="slide__background-image" src="./images/home/banner2.png" style="filter: brightness(0.5);">
+                        <div class="slide__info">
+                            <div class="slide__info__content">
+                                <h6 class="slide__info__date"><span>PRÓXIMO EVENTO</span> - DIA 25 DE SETEMBRO ÀS 19H</h6>
+                                <h2 class="slide__info__title"><span class="slide__info__accent">FEST</span><br>FOWARD
+                                </h2>
+                                <button class="slide__info__button">SAIBA MAIS</button>
+                            </div>
+                        </div>
+                        <a href="#carousel__slide3" class="carousel__next"></a>
+                    </div>
+                </li>
+                <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+                    <div class="carousel__snapper">
+                        <a href="#carousel__slide2" class="carousel__prev">
+                        </a>
+                        <img class="slide__background-image" src="./images/home/banner3.png">
+                        <div class="slide__info">
+                            <div class="slide__info__content">
+                                <h6 class="slide__info__date"><span>PRÓXIMO EVENTO</span> - DIA 25 DE SETEMBRO ÀS 19H</h6>
+                                <h2 class="slide__info__title"><span class="slide__info__accent">SHOW</span><br>FOWARD
+                                </h2>
+                                <button class="slide__info__button">SAIBA MAIS</button>
+                            </div>
+                        </div>
+                        <a href="#carousel__slide1" class="carousel__next"></a>
                     </div>
                 </li>
             </ol>
