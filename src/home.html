@@ -16,11 +16,7 @@
         <a href="./home.html">
             <h1 class="logo">Studi<span class="accent">on</span> <span class="subtitle">Eventos</span></h1>
         </a>
-        <input id="menu-toggle" type="checkbox" />
-        <label class="menu-button-container" for="menu-toggle">
-            <div class="menu-button"></div>
-        </label>
-        <ul class="menu">
+        <ul id="menu" class="desktop">
             <li>
                 <a class="active" href="./home.html"></a>
             </li>
@@ -40,6 +36,9 @@
                 <a href="./contato.html">Contato</a>
             </li>
         </ul>
+        <button class="nav__menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
     </nav>
 
     <header>
@@ -157,9 +156,9 @@
     <footer class="footer">
         <div class="container footer__container">
             <h2>Studi<span class="accent">on</span> <span class="subtitle">Eventos</span></h2>
-            <form>
+            <form id="newslatter-form">
                 <label>Receba News e promoções</label>
-                <input type="email" placeholder="Email" />
+                <input id="email" type="email" placeholder="Email" />
                 <button class="botao" type="submit">
                     <img class="icon" src="./images/icons/send2.png" alt="Enviar"> </button>
             </form>
@@ -183,7 +182,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
     <script src="http://ciromattia.github.io/jquery.counterup/jquery.counterup.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./home.js">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./home.js"></script>
+    <script src="./script.js"></script>
     </script>
 </body>
 

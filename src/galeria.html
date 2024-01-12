@@ -14,19 +14,15 @@
         <a href="./home.html">
             <h1 class="logo">Studi<span class="accent">on</span> <span class="subtitle">Eventos</span></h1>
         </a>
-        <input id="menu-toggle" type="checkbox" />
-        <label class="menu-button-container" for="menu-toggle">
-            <div class="menu-button"></div>
-        </label>
-        <ul class="menu">
+        <ul id="menu" class="desktop">
             <li>
                 <a href="./empresa.html">Empresa</a>
             </li>
             <li>
-                <a href="./eventos.html">Eventos</a>
+                <a class="active" href="./eventos.html">Eventos</a>
             </li>
             <li>
-                <a class="active" href="./galeria.html">Galeria</a>
+                <a href="./galeria.html">Galeria</a>
             </li>
             <li>
                 <a href="./depoimentos.html">Depoimentos</a>
@@ -35,6 +31,9 @@
                 <a href="./contato.html">Contato</a>
             </li>
         </ul>
+        <button class="nav__menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
     </nav>
 
     <header>
@@ -94,6 +93,10 @@
         <hr />
         <p class="container copyright">Studi<span>on</span> - Todos os direitos reservados</p>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>

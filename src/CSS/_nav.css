@@ -35,7 +35,7 @@ nav > a {
     margin-top: -0.5rem;
 }
 
-.menu {
+.desktop {
     gap: 3rem;
     max-width: 70rem;
     width: 100%;
@@ -46,7 +46,7 @@ nav > a {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
 }
 
-.menu a {
+.desktop a, .mobile a {
     text-decoration: none;
     color: #fff;
     font-size: 1.5rem;
@@ -55,15 +55,48 @@ nav > a {
     transition: color 0.5s linear;
 }
 
-.menu a:hover {
+.desktop a:hover {
     color: #ffc501;
 }
 
-.nav .active {
+.mobile {
+    display: grid;
+    place-items: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    width: 100vw;
+    height: 100vh;
+    padding: 3rem 2rem;
+
+    background-color: rgba(0, 0, 0, 0.95);
+}
+
+.mobile a {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.nav ul > .active {
     color: #EAAB0A;
 }
 
-#menu-toggle {
+.nav__menu-btn {
+    cursor: pointer;
+    font-size: 4rem;
+    width: fit-content;
+    color: #fff;
+    background: none;
+    border: none;
+    display: none;
+    z-index: 3;
+}
+
+/*#menu-toggle {
     display: none;
 }
 
@@ -112,31 +145,22 @@ nav > a {
 
 #menu-toggle:checked + .menu-button-container .menu-button {
     background: rgba(255, 255, 255, 0);
-}
+}*/
 
 @media screen and (max-width: 800px) {
     .logo {
         font-size: 3.5rem;
     }
 
-    .menu-button-container {
-        z-index: 999;
-        display: flex;
+    .desktop {
+        display: none;
     }
 
-    .menu {
-        background: #000;
-        position: absolute;
-        top: 8rem;
-        left: 0;
-        height: 100vh;
-        max-width: 100%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    .nav__menu-btn {
+        display: block;
     }
 
-    #menu-toggle:checked ~ .menu {
+   /* #menu-toggle:checked ~ .menu {
         display: flex;
         background-color: #000;
 
@@ -162,7 +186,7 @@ nav > a {
     #menu-toggle:checked ~ .menu a {
         font-size: 2rem;
         font-weight: 900;
-    }
+    }*/
 }
 
 @media screen and (max-width: 460px) {
