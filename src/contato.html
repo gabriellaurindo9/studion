@@ -11,14 +11,11 @@
 
 <body>
     <nav class="nav">
-        <a href="./">
+        <a href="./home.html">
             <h1 class="logo">Studi<span class="accent">on</span> <span class="subtitle">Eventos</span></h1>
         </a>
-        <input id="menu-toggle" type="checkbox" />
-        <label class="menu-button-container" for="menu-toggle">
-            <div class="menu-button"></div>
-        </label>
-        <ul class="menu">
+        
+        <ul id="menu" class="desktop">
             <li>
                 <a href="./empresa.html">Empresa</a>
             </li>
@@ -35,11 +32,13 @@
                 <a class="active" href="#">Contato</a>
             </li>
         </ul>
+        <button class="nav__menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
     </nav>
 
     <header>
-        <img class="header_background" src="./images/header_contato.png" alt="macbook">
-        <div class="header_background__mask"></div>
+        <img class="header_background" src="./images/headers/header_contato.png" alt="macbook" style="filter: brightness(0.2);">
         <div class="container container__header">
             <h2>.empresa</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis
@@ -51,6 +50,7 @@
     <main>
         <section class="section1">
             <section class="section1-left">
+                <div class="section1-left__container">
                 <h4>LIGUE PRA GENTE</h4>
                 <p>
                     <img class="icon" src="./images/icons/telefone_contato.png" alt="telefone">
@@ -61,10 +61,11 @@
                     +55 48 99943-7777
                 </p>
                 <h4>VENHA CONHECER NOSSA CASA</h4>
-                <p>
+                <p class="adress">
                     <img class="icon" src="./images/icons/localização_contato.png" alt="localização">
                     Rua Miguel Duax, 129 - Coqueiros Florianópolis/SC
                 </p>
+            </div>
             </section>
             <section class="section1-right">
                 <div class="section1-right__form-container">
@@ -114,6 +115,11 @@
         <hr />
         <p class="container copyright">Studi<span>on</span> - Todos os direitos reservados</p>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+    <script src="./script.js"></script>
+    </script>
 </body>
 
 </html>

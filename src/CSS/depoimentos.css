@@ -1,0 +1,134 @@
+/*SWIPER*/
+.slider {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  color: #fff;
+}
+
+.swiper-pagination-bullet {
+  opacity: 1;
+  background-color: #fff;
+  width: 2rem;
+  height: 2rem;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #000;
+}
+
+/*-------------------------------------------------------------*/
+
+main {
+    background-color: #ffc501;
+    padding-bottom: 8rem;
+}
+
+.section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.user-image {
+    width: 100%;
+    max-width: 20rem;
+}
+
+.name {
+    font-size: 5rem;
+    font-weight: 900;
+    color: #000;
+    text-align: right;
+}
+
+.name small {
+    font-size: 1.5rem;
+    font-weight: 500;
+    display: block;
+}
+
+.quotes {
+  color: #000;
+    font-size: 5rem;
+    font-weight: 900;
+    max-height: 2rem;
+}
+
+.text {
+    max-width: 70rem;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #000;
+    text-align: center;
+    text-wrap: pretty;
+    padding: 0.2rem;
+}
+
+@media screen and (max-width: 800px) {
+  .user-image {
+    max-width: 16rem;
+  }
+
+  .name {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .quotes {
+    font-size: 4rem;
+  }
+
+  .text {
+    font-size: 1.6rem;
+    max-width: 50rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header h2 {
+  font-size: 0.1rem;
+}
+  
+  .user-image {
+    max-width: 14rem;
+  }
+
+  .name {
+    font-size: 2.4rem;
+  }
+
+  .name small {
+    font-size: 1rem;
+  }
+
+  .quotes {
+    font-size: 3rem;
+  }
+
+  .text {
+    font-size: 1.4rem;
+    max-width: 30rem;
+  }
+
+  .carousel__navigation-button {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+}
+
+
+
+  

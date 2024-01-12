@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./CSS/slide.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./CSS/home.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img class="slide__background-image" src="./images/home/banner1.jpg.png" alt="banner1" />
+        <div class="slide__info">
+          <div class="slide__info__content">
+            <h6 class="slide__info__date">
+              <span class="slide__info__accent">PRÓXIMO EVENTO</span> - DIA 25 DE SETEMBRO ÀS 19H
+            </h6>
+            <h2 class="slide__info__title">
+              <span class="slide__info__accent">CREATIVE</span> MINDS
+            </h2>
+            <button class="slide__info__button">SAIBA MAIS</button>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <img class="slide__background-image" src="./images/home/banner2.png" alt="banner2"
+          style="filter: brightness(0.5);" />
+        <div class="slide__info">
+          <div class="slide__info__content">
+            <h6 class="slide__info__date">
+              <span class="slide__info__accent">PRÓXIMO EVENTO</span> - DIA 25 DE SETEMBRO ÀS 19H
+            </h6>
+            <h2 class="slide__info__title">
+              <span class="slide__info__accent">FEST</span> FOWARD
+            </h2>
+            <button class="slide__info__button">SAIBA MAIS</button>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <img class="slide__background-image" src="./images/home/banner3.png" alt="banner3" />
+        <div class="slide__info">
+          <div class="slide__info__content">
+            <h6 class="slide__info__date">
+              <span class="slide__info__accent">PRÓXIMO EVENTO</span> - DIA 25 DE SETEMBRO ÀS 19H
+            </h6>
+            <h2 class="slide__info__title">
+              <span class="slide__info__accent">SHOE</span> FOWARD
+            </h2>
+            <button class="slide__info__button">SAIBA MAIS</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    new Swiper('.swiper', {
+      // Optional parameters
+      autoplay: {
+        delay: 2000,
+        pauseOnMouseEnter: true,
+      },
+      effect: 'cube',
+      loop: true,
+      grabCursor: true,
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      speed: 1000,
+    });
+  </script>
+</body>
+
+</html>

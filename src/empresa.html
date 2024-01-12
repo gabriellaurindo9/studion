@@ -11,16 +11,12 @@
 
 <body>
     <nav class="nav">
-        <a href="./index.html">
+        <a href="./home.html">
             <h1 class="logo">Studi<span class="accent">on</span> <span class="subtitle">Eventos</span></h1>
         </a>
-        <input id="menu-toggle" type="checkbox"/>
-        <label class="menu-button-container" for="menu-toggle">
-            <div class="menu-button"></div>
-        </label>
-        <ul class="menu">
+        <ul id="menu" class="desktop">
             <li>
-                <a href="#" class="active">Empresa</a>
+                <a href="./empresa.html">Empresa</a>
             </li>
             <li>
                 <a href="./eventos.html">Eventos</a>
@@ -29,16 +25,19 @@
                 <a href="./galeria.html">Galeria</a>
             </li>
             <li>
-                <a href="./depoimentos.html">Depoimentos</a>
+                <a class="active" href="./depoimentos.html">Depoimentos</a>
             </li>
             <li>
                 <a href="./contato.html">Contato</a>
             </li>
         </ul>
+        <button class="nav__menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
     </nav>
 
     <header>
-        <img class="header_background" src="./images/enterprise 1.png" alt="predios">
+        <img class="header_background" src="./images/headers/header-empresa.png" alt="predios">
         <div class="container container__header">
         <h2>.empresa</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum.
@@ -100,6 +99,10 @@
             <p class="container copyright">Studi<span>on</span> - Todos os direitos reservados</p>
         </footer>
     </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
