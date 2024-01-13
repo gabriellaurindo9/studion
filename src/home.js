@@ -3,7 +3,7 @@ $(document).ready(() => {
   new Swiper('.swiper', {
     // Optional parameters
     autoplay: {
-      delay: 2000,
+      delay: 20000000,
       pauseOnMouseEnter: true,
     },
     effect: 'none',

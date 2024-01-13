@@ -19,7 +19,7 @@
 /*QUOTE*/
 
 .quote {
-    background-image: url(../images/home/paralax.png);
+    background-image: url(../images/home/parallax.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -164,6 +164,10 @@
 
 .slide__info__accent {
     color: #ffc501;
+}
+
+a {
+  text-decoration: none;
 }
 
 .slide__info__button {
