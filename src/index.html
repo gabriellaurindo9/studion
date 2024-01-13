@@ -4,94 +4,194 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Studion</title>
+    <title>Studion - Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./CSS/slide.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./CSS/home.css">
 </head>
 
 <body>
-    <nav>
-        <a href="./empresa.html">
-            <h1>Studi<span class="accent">on</span> <span class="subtitle">Eventos</span></h1>
+    <nav class="nav">
+        <a href="./index.html">
+            <h1 class="logo">Studi<span class="accent">on</span> <span class="subtitle">Eventos</span></h1>
         </a>
-        <ul>
+        <ul id="menu" class="desktop">
             <li>
-                <a href="#" class="selected">Empresa</a>
+                <a class="active" href="./home.html"></a>
             </li>
             <li>
-                <a href="#">Eventos</a>
+                <a href="./empresa.html">Empresa</a>
             </li>
             <li>
-                <a href="#">Galeria</a>
+                <a href="./eventos.html">Eventos</a>
             </li>
             <li>
-                <a href="../src2/index1.html">Depoimentos</a>
+                <a href="./galeria.html">Galeria</a>
             </li>
             <li>
-                <a href="#">Contatos</a>
+                <a href="./depoimentos.html">Depoimentos</a>
+            </li>
+            <li>
+                <a href="./contato.html">Contato</a>
             </li>
         </ul>
+        <button class="nav__menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
     </nav>
 
-    <header class="container">
-        <h2>.empresa</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum.
-            Aliquam nonummy auctor massa</p>
+    <header>
+        <section class="slider">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img class="slide__background-image" src="./images/home/banner1.jpg.png" alt="banner1" />
+                        <div class="slide__info">
+                            <div class="slide__info__content">
+                                <h6 class="slide__info__date">
+                                    <span class="slide__info__accent">PRÓXIMO EVENTO</span> - DIA 25 DE SETEMBRO ÀS 19H
+                                </h6>
+                                <h2 class="slide__info__title">
+                                    <span class="slide__info__accent">CREATIVE</span> MINDS
+                                </h2>
+                                <a href="./eventos.html">
+                                    <button class="slide__info__button">SAIBA MAIS</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="slide__background-image" src="./images/home/banner2.jpeg" alt="banner2"
+                            style="filter: brightness(0.5);" />
+                        <div class="slide__info">
+                            <div class="slide__info__content">
+                                <h6 class="slide__info__date">
+                                    <span class="slide__info__accent">PRÓXIMO EVENTO</span> - DIA 25 DE SETEMBRO ÀS 19H
+                                </h6>
+                                <h2 class="slide__info__title">
+                                    <span class="slide__info__accent">FEST</span> FOWARD
+                                </h2>
+                                <a href="./eventos.html">
+                                    <button class="slide__info__button">SAIBA MAIS</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="slide__background-image" src="./images/home/banner3.png" alt="banner3" />
+                        <div class="slide__info">
+                            <div class="slide__info__content">
+                                <h6 class="slide__info__date">
+                                    <span class="slide__info__accent">PRÓXIMO EVENTO</span> - DIA 25 DE SETEMBRO ÀS 19H
+                                </h6>
+                                <h2 class="slide__info__title">
+                                    <span class="slide__info__accent">SHOE</span> FOWARD
+                                </h2>
+                                <a href="./eventos.html">
+                                    <button class="slide__info__button">SAIBA MAIS</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
     </header>
 
     <main>
-        <section class="container section1">
-            <h4>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                <small>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                    incididunt ut labore et
-                    dolore magna aliqua.
-                    <br><br>
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                    ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate
-                </small>
-            </h4>
-            <div>
-                <img src="./images/Layer 9 copy (1) 1.png" alt="Pessoas conversando no celular" class="pessoa" />
+        <section class="counter">
+            <ul class="container counter_container">
+                <li>
+                    <h3>
+                        + de <span class="counter__number">140</span>
+                        <small>EVENTOS REALIZADOS</small>
+                    </h3>
+                </li>
+                <li>
+                    <h3>
+                        + de <span class="counter__number">280000</span>
+                        <small>INGRESSOS VENDIDOS</small>
+                    </h3>
+                </li>
+                <li>
+                    <h3>
+                        + de <span class="counter__number">84</span>
+                        <small>EMPRESAS ATENDIDAS</small>
+                    </h3>
+                </li>
+            </ul>
+        </section>
+
+        <section class="container institutional">
+            <img class="institutional__image" src="./images/home/institutional.jpg.png">
+            <div class="institutional__info">
+                <h6>
+                    FAZEMOS O SEU EVENTO ACONTECER
+                </h6>
+                <h4>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </h4>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio veniam amet autem alias fugiat,
+                    labore laborum ex soluta dolores quidem vel dolorem facilis enim tempora doloremque exercitationem
+                    omnis reprehenderit velit.
+                </p>
+                <a href="./empresa.html">SAIBA MAIS</a>
             </div>
         </section>
-
-        <section class="container section2">
-            <h4>Quem confia no nosso trabalho</h4>
-            <img src="./images/logos 1.png" alt="Logo das empresas parceiras" />
-        </section>
-
-        <section class="container section3">
-            <img src="./images/Video.jpg" alt="Homem sentado em um prédio" />
-
-        </section>
-
-        <footer>
-            <div class="container">
-                <h2>Studi<span class="accent">on</span> <span class="subtitle">Eventos</span></h2>
-                <form>
-                    <label>Receba News e promoções</label>
-                    <input type="email" placeholder="Email" />
-                    <button class="botao" type="submit">
-                        <img src="./images/icons/send2.png" alt="Enviar"> </button>
-                </form>
-                <ul>
-                    <li>
-                        <a href="#"> <img src="./images/icons/facebook.png"></a>
-                    </li>
-                    <li>
-                        <a href="#"> <img src="./images/icons/whatsapp.png"></a>
-                    </li>
-                    <li>
-                        <a href="#"> <img src="./images/icons/youtube.png"></a>
-                    </li>
-                </ul>
+        <section class="quote">
+            <div class="container quote__container">
+                <div class="quote__content">
+                    <h6>
+                        Você informa a temática e nós
+                        planejamos um evento com
+                        tecnologia e
+                    </h6>
+                    <h2>
+                        <span>MUITO+</span>DIVERSÃO
+                    </h2>
+                    <a href="./contato.html">FAZER COTAÇÃO</a>
+                </div>
             </div>
-            <hr />
-            <p class="container">Studi<span>on</span> - Todos os direitos reservados</p>
-        </footer>
+        </section>
     </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <h2>Studi<span class="accent">on</span> <span class="subtitle">Eventos</span></h2>
+            <form id="newslatter-form">
+                <label>Receba News e promoções</label>
+                <input id="email" type="email" placeholder="Email" />
+                <button class="botao" type="submit">
+                    <img class="icon" src="./images/icons/send2.png" alt="Enviar"> </button>
+            </form>
+            <ul class="socials">
+                <li>
+                    <a href="#"> <img class="icon" src="./images/icons/facebook.png"></a>
+                </li>
+                <li>
+                    <a href="#"> <img class="icon" src="./images/icons/whatsapp.png"></a>
+                </li>
+                <li>
+                    <a href="#"> <img class="icon" src="./images/icons/youtube.png"></a>
+                </li>
+            </ul>
+        </div>
+        <hr />
+        <p class="container copyright">Studi<span>on</span> - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+    <script src="http://ciromattia.github.io/jquery.counterup/jquery.counterup.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./home.js"></script>
+    <script src="./script.js"></script>
+    </script>
 </body>
 
 </html>
